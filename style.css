@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, rgb(220, 220, 220), rgb(249, 249, 249));
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  /* height: 400px; */
+  margin: 10px;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 15px -8px rgba(0, 0, 0, 0.5);
+}
+
+.card_image {
+  /* background-color: aqua; */
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+  background-image: url("https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80");
+  background-position: bottom center;
+}
+
+.card-2 {
+  background-image: url("https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-position: center center;
+}
+
+.card-3 {
+  background-image: url("https://images.unsplash.com/photo-1632441730372-d8509de481d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-position: center center;
+}
+
+.card h2 {
+  padding: 10px;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  background-color: black;
+  color: white;
+  padding: 15px 5px;
+  display: block;
+  margin: 20px 50px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
